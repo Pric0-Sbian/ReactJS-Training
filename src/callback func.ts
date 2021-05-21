@@ -1,4 +1,5 @@
 type numstr = number | string;
+
 function add(
   num1: numstr,
   num2: numstr,
@@ -8,14 +9,12 @@ function add(
     cb(ans);
     return ans;
 
-  }
-  else if (typeof (num1) === 'string' && typeof (num2) === 'string') {
+  } else if (typeof (num1) === 'string' && typeof (num2) === 'string') {
     let ans = num1 + num2;
     cb(ans);
     return ans;
 
-  }
-  else {
+  } else {
     console.log("Please enter same type of data");
   }
 
