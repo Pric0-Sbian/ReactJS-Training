@@ -2,7 +2,7 @@
 if(){}else{}
 if(){}elseif(){}else{}
 */
-let age = 105;
+let age:number = 105;
 if(age > 18)
 {
     console.log("you can Drive gear vehicles and non gear vehicles");
