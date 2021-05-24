@@ -12,6 +12,6 @@ myname = true; // because the type is unknown we can put any type in this variab
 var anothername;
 var str;
 str = anothername;
-// this does not give any error. 
+// this does not give any error.
 //there is also a type called never which when given to function will restrict the function from returning value
 //and if we try to return a value in a function with type never its give a error unlike void which does not.

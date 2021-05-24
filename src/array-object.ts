@@ -1,3 +1,4 @@
+export {};
 let arr:string[] = ['hello', 'my','name','is','Prashant Joshi']; //array
 let ob1 = {
     name:"Prashant Joshi",
