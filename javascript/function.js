@@ -1,35 +1,35 @@
-print(a)                // function to print any thing in the page
+function print(a)                // function to print any thing in the page
 {
-    Document.write(a);
+    document.write(a);
 }
-loop(x, comp)           // function which inceases its value until its greater or equal to a given parameter
+function loop(x, comp)           // function which inceases its value until its greater or equal to a given parameter
 {
     x += x;
-    // if(x >= comp)
-    // {
-    //     return x;
-    // }
-    // else
-    // {
-    //     loop(x,comp);
-    // }
+    if(x >= comp)   {
+        return x;
+    }
+    else
+    {
+        loop(x,comp);
+    }
+
 }
-about_func(func_name)       // gives the function name and code inside its body
+function about_func(func_name)       // gives the function name and code inside its body
 {
     document.write("<p>" + func_name + "</p>");
 }
 
-add(arr)
+function add(arr)
 {
-    var sum = 0;
-    for(var data of arr)
+    let sum = 0;
+    for(let data of arr)
     {
         sum += data;
     }
     return sum;
 }
-print("hello world");
+print("hello world\t");
 document.write(loop(2,50));
 about_func(loop);
-add([1,2,3,4,5]);
+document.write(add([1,2,3,4,5]));
 
