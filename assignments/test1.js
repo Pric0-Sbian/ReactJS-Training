@@ -13,10 +13,9 @@ const a = [
 //     {First Name: 'Tom', Age: 25}
 //   ];
 
-const len = b.length;
-let c = [];
+const c = [];
 
-for (var i=0; i < len; i++) {
+for (var i=0; i < b.length; i++) {
   let fstring = a[0].alais + ": " + b[i].first_name + ", " + a[1].alais + ": " + b[i].age;
   let sstring = fstring; 
   document.write(fstring);
