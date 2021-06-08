@@ -31,7 +31,7 @@ for (var i=0; i < b.length; i++) {
     let c = (i+1)/2, e = c.toString();
     console.log(e);
     if(e.indexOf('.') != -1 ) {
-      //empty.value = arr[i+1];
+      //object.value = arr[i+1];
       object[value] = arr[i+1];
     } 
   }); 
