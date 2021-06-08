@@ -144,4 +144,36 @@ const c = [
   const b = [2,3,4,5,6,7,8,9,10];
   // if user select id 5
   const b = [7,8,9,10];
-  */
+  */// function datajson(d){
+//   const ma =  [];
+//   const ak = d.split(',');
+//   for(let i=0;i<2;i++){
+//     const av = ak[i].split(':');
+//     const as ='"'+av[0]+'"'+':'+'"'+av[1]+'"';
+//     ma.push(as);
+//   }
+//   const jds = '{'+ma.toString()+'}';
+//   const jd = JSON.parse(jds);
+//   return jd;
+// }
+
+// const a = [
+//   {name: 'first_name', alais: 'First Name', type: 'string'},
+//   {name: 'age', alais: 'Age', type: 'number'}
+// ];
+
+// const b = [
+//   {first_name: 'John', age: 23},
+//   {first_name: 'Tom', age: 25}
+// ];
+
+// const c = [];
+// const z = b.length;
+
+// for (let i=0;i<z;i++) {
+//   d = a[0].alais + ": " + b[i].first_name + ", " + a[1].alais + ": " + b[i].age;
+//   document.getElementById(i+1).innerHTML = d;
+//   const r = datajson(d);
+//   c.push(r)
+// }
+// console.log(c);
