@@ -18,22 +18,28 @@
   // if user select id 5
   const b = [7,8,9,10];
   */
-  function get_by_id(x,i_d){
+ function get_by_id(){
+    i_d = document.getElementById("select").value; 
     let ids = [i_d];
     let children = [];
-    for(data of x){
-      if(data.parentId === i_d){
-        ids.push(data.id);
+    for(data of a){
+      for(i of ids){
+        if(data.parentId == i){
+          ids.push(data.id);
+        }
       }
     }
     for(var id of ids){
-      for(var datax of x){
-        if(datax.parentId === id){
+      for(var datax of a){
+        if(datax.parentId == id){
           children.push(datax.id);
         }
       }
     }
-    return children;
-  }
-  console.log(get_by_id(d,2));
-  document.write(get_by_id(d,1));
+    console.log(children);
+    childString = "Here is the list of Children of: " + i_d + "<br>" + "CHILDS<br>";
+    for(child of children){
+        childString += child + "<br>"; 
+    }
+    document.getElementById("p").innerHTML = childString;
+ }

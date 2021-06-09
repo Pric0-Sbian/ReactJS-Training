@@ -4,7 +4,7 @@ const a = [
   ];
   const b = [
     {first_name: 'John', age: 23},
-    {first_name: 'Tom', age: 25}
+    {first_name: 'Tom', age: 25},
   ];
   
   //output will be:
@@ -14,29 +14,16 @@ const a = [
 //   ];
 
 const c = [];
-
-for (var i=0; i < b.length; i++) {
-  let fstring = a[0].alais + ": " + b[i].first_name + ", " + a[1].alais + ": " + b[i].age;
-  let sstring = fstring; 
-  document.write(fstring);
-  console.log(fstring);
-  let tstring = sstring.replace(',','?');
-  document.write(tstring);
-  console.log(tstring);
-  let arr = tstring.split('?');
-  console.log(arr);
-  document.write(arr);
+const farr = [];
+for(ob of a){
+  farr.push(ob.alais);
+}
+console.log(farr);
+for(i = 0; i< b.length; i++){
   let object = {};
-  arr.forEach(function(value,i) {
-    let c = (i+1)/2, e = c.toString();
-    console.log(e);
-    if(e.indexOf('.') != -1 ) {
-      //object.value = arr[i+1];
-      object[value] = arr[i+1];
-    } 
-  }); 
-c.push(object);
-      
+  object[farr[0]] = b[i].first_name;
+  object[farr[1]] = b[i].age;
+  c.push(object);
 }
 console.log(c);
-document.write(c);
+document.write(JSON.stringify(c));
