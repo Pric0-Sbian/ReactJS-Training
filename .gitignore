@@ -3,4 +3,10 @@ node_modules/
 .eslintrc.js
 package-lock.json
 package.json
-assignmentJS/
+dist/
+first-project/
+img/
+javascript/
+src/
+*.html
+*.json
