@@ -8,5 +8,6 @@ first-project/
 img/
 javascript/
 src/
-*.html
-*.json
+pg.html
+index.html
+tsconfig.json
