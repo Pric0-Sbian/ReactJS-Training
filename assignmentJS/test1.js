@@ -16,22 +16,28 @@ const a = [
 //     {First Name: 'John', Age: 23},
 //     {First Name: 'Tom', Age: 25}
 //   ];
-
+let doc = '<button type = "button" onclick = "user_details();">Click Me</button><br><hr><i><ul id="p"></ul><i>';
+document.write(doc);
 const c = [];
 const narr = [];
 const aarr = [];
-for(ob of a){
-  aarr.push(ob.alais);
-  narr.push(ob.name);
-}
-//console.log(aarr);
-for(i = 0; i< b.length; i++){
-  let object = {};
-  for(j = 0; j < narr.length; j++){
-  object[aarr[j]] = b[i][narr[j]];
+function user_details(){
+  for(ob of a){
+    aarr.push(ob.alais);
+    narr.push(ob.name);
   }
-  console.log(object);  
-  c.push(object);
+  for(i = 0; i< b.length; i++){
+    let object = {};
+    for(j = 0; j < narr.length; j++){
+      object[aarr[j]] = b[i][narr[j]];
+    }  
+    c.push(object);
+  }
+  console.log(c);
+  const pro = document.getElementById("p");
+  for(data of c){
+  const noob = document.createElement("li");
+  noob.innerHTML = JSON.stringify(data);
+  pro.appendChild(noob);
+  }
 }
-console.log(c);
-document.write(JSON.stringify(c));

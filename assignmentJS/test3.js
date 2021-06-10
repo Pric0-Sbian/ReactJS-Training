@@ -18,22 +18,6 @@
   // if user select id 5
   const b = [7,8,9,10];
   */
-  // <h3><i>Select the Id whose Children you want to see</i></h3> 
-  // <select name="ids" id="select">
-  //     <option selected disabled>Select Id</option>
-  //     <option value="1">1</option>
-  //     <option value="2">2</option>
-  //     <option value="3">3</option>
-  //     <option value="4">4</option>
-  //     <option value="5">5</option>
-  //     <option value="6">6</option>
-  //     <option value="7">7</option>
-  //     <option value="8">8</option>
-  //     <option value="9">9</option>
-  //     <option value="10">10</option>
-  // </select>
-  // <button type = "button" onclick="get_by_id();">Get Children</button>
-  // <i><p id = "p"></p></i>
   let doc = '<h3><i>'+'Select the Id whose Children you want to see'+'</i></h3>'+'<select name="ids" id="select"><option selected disabled>Select Id</option>';
   for(object of a){
     doc += '<option value="'+ object.id +'">'+ object.id +'</option>';
