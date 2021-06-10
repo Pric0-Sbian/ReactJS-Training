@@ -1,10 +1,14 @@
 const a = [
     {name: 'first_name', alais: 'First Name', type: 'string'},
-    {name: 'age', alais: 'Age', type: 'number'}
+    {name: 'age', alais: 'Age', type: 'number'},
+    {name: 'gender', alais: 'Gender', type: 'string'},
+    {name: 'city', alais: 'City', type: 'string'}
+    
   ];
   const b = [
-    {first_name: 'John', age: 23},
-    {first_name: 'Tom', age: 25},
+    {first_name: 'John', age: 23, gender: 'Male', city: 'delhi'},
+    {first_name: 'Tom', age: 25, gender: 'Male', city: 'faribad'},
+    {first_name: 'jerry', age: 20, gender: 'Male', city: 'faribad'}
   ];
   
   //output will be:
@@ -14,15 +18,19 @@ const a = [
 //   ];
 
 const c = [];
-const farr = [];
+const narr = [];
+const aarr = [];
 for(ob of a){
-  farr.push(ob.alais);
+  aarr.push(ob.alais);
+  narr.push(ob.name);
 }
-console.log(farr);
+//console.log(aarr);
 for(i = 0; i< b.length; i++){
   let object = {};
-  object[farr[0]] = b[i].first_name;
-  object[farr[1]] = b[i].age;
+  for(j = 0; j < narr.length; j++){
+  object[aarr[j]] = b[i][narr[j]];
+  }
+  console.log(object);  
   c.push(object);
 }
 console.log(c);

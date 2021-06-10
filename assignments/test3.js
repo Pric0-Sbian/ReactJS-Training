@@ -18,19 +18,41 @@
   // if user select id 5
   const b = [7,8,9,10];
   */
- function get_by_id(){
+  // <h3><i>Select the Id whose Children you want to see</i></h3> 
+  // <select name="ids" id="select">
+  //     <option selected disabled>Select Id</option>
+  //     <option value="1">1</option>
+  //     <option value="2">2</option>
+  //     <option value="3">3</option>
+  //     <option value="4">4</option>
+  //     <option value="5">5</option>
+  //     <option value="6">6</option>
+  //     <option value="7">7</option>
+  //     <option value="8">8</option>
+  //     <option value="9">9</option>
+  //     <option value="10">10</option>
+  // </select>
+  // <button type = "button" onclick="get_by_id();">Get Children</button>
+  // <i><p id = "p"></p></i>
+  let doc = '<h3><i>'+'Select the Id whose Children you want to see'+'</i></h3>'+'<select name="ids" id="select"><option selected disabled>Select Id</option>';
+  for(object of a){
+    doc += '<option value="'+ object.id +'">'+ object.id +'</option>';
+  }
+  doc += '</select><button type = "button" onclick="get_by_id();">Get Children</button><i><p id = "p"></p></i>';
+  document.write(doc);
+  function get_by_id(){
     i_d = document.getElementById("select").value; 
     let ids = [i_d];
     let children = [];
-    for(data of a){
-      for(i of ids){
+    for(let data of a){
+      for(let i of ids){
         if(data.parentId == i){
           ids.push(data.id);
         }
       }
     }
-    for(var id of ids){
-      for(var datax of a){
+    for(let id of ids){
+      for(let datax of a){
         if(datax.parentId == id){
           children.push(datax.id);
         }
