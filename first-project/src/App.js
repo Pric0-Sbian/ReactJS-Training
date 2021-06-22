@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
-import CompProps from './myComponents/CompProps';
-import Blogs from './myComponents/Blogs';
+import Click from './myComponents/class';
+//import CompProps from './myComponents/CompProps';
+//import Blogs from './myComponents/Blogs';
+//import Tick from './myComponents/date';
 //import logo from './logo.svg';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 
 // React.createElement(
 //   'h1',
@@ -20,13 +22,12 @@ import Blogs from './myComponents/Blogs';
 // );
 function App() { 
     // const element = <p><i>this is a html tag passed in a react element</i></p>;
-    // ReactDOM.render(element, document.getElementById("root"));
-  return (
-    <>
-    <CompProps />
-    <Blogs />
-    </>
-  );
+    return (ReactDOM.render(<Click />, document.getElementById("root")));
+  // return (
+  //   <>
+  //   <Click />
+  //   </>
+  // );
 }
 // function tick() {
 //   const element = (
