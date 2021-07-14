@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Prashant Joshi",
+      "email": "prashant1998joshi@gmail.com",
+      "phone": "9917218628",
+      "id": 1
+    },
+    {
+      "name": "JOJO",
+      "email": "mr.jojo@gmail.com",
+      "phone": "0000000000",
+      "id": 2
+    },
+    {
+      "name": "Some One",
+      "email": "someone@email.com",
+      "phone": "9999999999",
+      "id": 3
+    },
+    {
+      "name": "Some One's Sister",
+      "email": "sister@email.com",
+      "phone": "2222222222",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+.form{
+  width:fit-content;
+  justify-content:center;
+  margin: 0 auto;
+}
+footer{
+  position:relative;
+  top: 600px;
+  background-color: darkgray;
+  color:aliceblue;
+}
