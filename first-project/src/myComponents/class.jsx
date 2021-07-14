@@ -11,6 +11,11 @@ export default class Click extends Component {
             1000
         )
     }
+    tick() {
+        this.setState({
+          date: new Date()
+        });
+      }
     render() {
         return (
             <div>

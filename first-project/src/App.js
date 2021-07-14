@@ -1,60 +1,44 @@
+//51 minutes in video
 import './App.css';
 import React from 'react';
-import Click from './myComponents/class';
+import Header from './todos/Header';
+import Footer from './todos/Footer';
+import Todos from './todos/Todos';
+
+// import Click from './myComponents/class';
+// import ReactDOM from 'react-dom';
+
+//import Toggle from './myComponents/eventHandleClass';
+//import Form from './myComponents/eventHandling';
 //import CompProps from './myComponents/CompProps';
 //import Blogs from './myComponents/Blogs';
 //import Tick from './myComponents/date';
 //import logo from './logo.svg';
-import ReactDOM from 'react-dom';
 
-// React.createElement(
-//   'h1',
-//   {className: 'name'}
-// );
-// function Welcome(props) {
-//   return <h1>Hello, {props.name}</h1>;
-// }
-
-// const userDefined = <Welcome name="Sara" />;
-// ReactDOM.render(
-//   userDefined,
-//   document.getElementsByClassName('name')
-// );
-function App() { 
-    // const element = <p><i>this is a html tag passed in a react element</i></p>;
-    return (ReactDOM.render(<Click />, document.getElementById("root")));
-  // return (
-  //   <>
-  //   <Click />
-  //   </>
-  // );
+function App() {
+  let data = [
+    {
+      title: 'hello brother',
+      body: 'there are things in my heart only you could see'
+    },
+    {
+      title: 'hello second brother',
+      body: 'there are things in my x-ray only you could see'
+    },
+    {
+      title: 'hello third brother',
+      body: 'there are things in my head only you could see'
+    }
+  ];
+  const onDelete = (data)=>{
+    console.log('I am onDelete of todo', data);
+  }
+  return (
+    <>
+      <Header title="MyTodoList" searchBar={true} />
+      <Todos data={data} onDelete={onDelete}/>
+      <Footer />
+    </>
+  );
 }
-// function tick() {
-//   const element = (
-//     <div>
-//       <h1>Hello, world!</h1>
-//       <h2>It is {new Date().toLocaleTimeString()}.</h2>
-//     </div>
-//   );
-//   ReactDOM.render(element, document.getElementById('new'));
-// }
-
-// setInterval(tick, 1000);
-
 export default App;
-/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div> */
